@@ -24,5 +24,5 @@ jobs:
       run: |
         cd ./python
         echo "${{ secrets.DOCKERPW }}" | docker login -u "charcos" --password=${{ secrets.DOCKERPW }}
-        docker image build -t [your dockerhub username here]/gitops:hellov1.2 .
-        docker push [your docker hub username here]/gitops:hellov1.2
+        docker image build -t charcos/gitops:hellov1.2 .
+        docker push charcos/gitops:hellov1.2
